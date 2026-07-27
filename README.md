@@ -91,7 +91,7 @@ simple-crud-php-mysql/
    * Upload and execute the SQL file located at `database/schema.sql`.
 
 3. **Configure Database Connection:**
-   Open `config/connect.php` (or `connect.php`) and verify connection parameters:
+   Open `assets/connect.php` (or `connect.php`) and verify connection parameters:
    ```php
    <?php
    $db = new PDO('mysql:host=localhost; dbname=simplecrud; charset=utf8mb4', 'root', '');
