@@ -40,21 +40,28 @@ A simple web application built using native PHP and MySQL to demonstrate the fun
 ```text
 simple-crud-php-mysql/
 │
-├── css/
-├── fonts/
-├── img/
-├── js/
+├── assets/                          
+│   ├── css/
+│   ├── fonts/
+│   ├── img/
+│   ├── js/
+│   ├── connect.php
+│   ├── delete.php
+│   ├── edit.php
+│   ├── edit_user.php
+│   ├── index.php
+│   ├── input.php
+│   └── report.php
 │
-├── connect.php
-├── delete.php
-├── edit.php
-├── edit_user.php
-├── home.php
-├── index.php
-├── report.php
+├── screenshots/                        
+│   ├── edit.png
+│   ├── index.png
+│   ├── input.png
+│   ├── report.png
+│   └── search.png
 │
-├── README.md
-└── LICENSE
+├── LICENSE
+└── README.md
 ```
 
 ---
