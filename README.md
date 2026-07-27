@@ -1,31 +1,128 @@
-# Simple PHP MySQL CRUD Application
+# Simple CRUD Application with PHP & MySQL
 
-This is a simple CRUD (Create, Read, Update, Delete) application built with **PHP** and **MySQL**. It demonstrates basic database operations using a web interface.
+A simple web application built using native PHP and MySQL to demonstrate the fundamental CRUD (Create, Read, Update, Delete) operations. This project was developed as a learning exercise to understand database interaction, server-side scripting, and responsive web development using Bootstrap.
+
+---
+
+## Preview
+
+![Home Page](screenshots/index.png)
+
+> Additional screenshots are available in the **screenshots/** folder.
+
+---
 
 ## Features
 
-- Create new records
-- Read/view existing records
-- Update existing records
+- Create new user records
+- View existing records
+- Update user information
 - Delete records
-- Simple and clean UI (optional: mention any frontend framework or styling)
+- MySQL database integration
+- Responsive user interface with Bootstrap
+- Simple reporting page
 
-## Technologies Used
+---
 
-- PHP (Core PHP, no framework)
+## Tech Stack
+
+- PHP (Native PHP)
 - MySQL
-- HTML/CSS
-- (Optional: Bootstrap for styling)
+- HTML5
+- CSS3
+- Bootstrap
+- JavaScript
 
-## Getting Started
+---
+
+## Project Structure
+
+```text
+simple-crud-php-mysql/
+│
+├── css/
+├── fonts/
+├── img/
+├── js/
+│
+├── connect.php
+├── delete.php
+├── edit.php
+├── edit_user.php
+├── home.php
+├── index.php
+├── report.php
+│
+├── README.md
+└── LICENSE
+```
+
+---
+
+## Installation
 
 ### Prerequisites
 
-- PHP 7.x or newer
+- PHP 7.0 or later
 - MySQL
-- A web server (e.g., Apache or XAMPP)
+- Apache (XAMPP, Laragon, or WAMP)
 
-### Installation
+### Steps
 
-1. Clone the repository:
-   git clone https://github.com/septharie/simple-crud-php-mysql.git
+1. Clone this repository
+
+```bash
+git clone https://github.com/septharie/simple-crud-php-mysql.git
+```
+
+2. Place the project inside your web server directory.
+
+Example (XAMPP):
+
+```text
+htdocs/simple-crud-php-mysql
+```
+
+3. Create a MySQL database.
+
+4. Configure your database connection in `connect.php`.
+
+5. Start Apache and MySQL.
+
+6. Open your browser and visit:
+
+```text
+http://localhost/simple-crud-php-mysql
+```
+
+---
+
+
+## Learning Outcomes
+
+This project helped me strengthen my understanding of:
+
+- PHP programming fundamentals
+- CRUD operations
+- MySQL database connectivity
+- SQL queries
+- HTML forms and data processing
+- Bootstrap-based responsive layouts
+- Organizing a small PHP application
+
+---
+
+## Future Improvements
+
+- User authentication and authorization
+- Search and filtering
+- Pagination
+- Server-side form validation
+- Prepared statements (PDO/MySQLi)
+- Export reports to Excel or PDF
+
+---
+
+## License
+
+This project is available under the MIT License.
