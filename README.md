@@ -1,6 +1,11 @@
-# Simple CRUD Application with PHP & MySQL
+# 📝 Simple User Management System (PHP & MySQL PDO)
 
-A simple web application built using native PHP and MySQL to demonstrate the fundamental CRUD (Create, Read, Update, Delete) operations. This project was developed as a learning exercise to understand database interaction, server-side scripting, and responsive web development using Bootstrap.
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+A foundational web application demonstrating core **CRUD (Create, Read, Update, Delete)** operations built with native **PHP (PDO)** and **MySQL**. Features clean data entry forms, PDO prepared statements for database interactions, and an organized tabular report view.
 
 ---
 
@@ -12,30 +17,26 @@ A simple web application built using native PHP and MySQL to demonstrate the fun
 
 ---
 
-## Features
+## ✨ Features
 
-- Create new user records
-- View existing records
-- Update user information
-- Delete records
-- MySQL database integration
-- Responsive user interface with Bootstrap
-- Simple reporting page
+* ➕ **Create Record:** Add new user entries with Name, Email, and ID Number via `input.php`.
+* 📋 **Read Record:** View all stored user entries in a clean, styled table view via `report.php`.
+* 🔍 **Search & Find:** Search users by name before making updates via `edit.php`.
+* ✏️ **Update Record:** Dynamically update user email and ID number via `edit_user.php`.
+* ❌ **Delete Record:** Safely remove user records from the database via `delete.php`.
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- PHP (Native PHP)
-- MySQL
-- HTML5
-- CSS3
-- Bootstrap
-- JavaScript
+* **Backend:** PHP 7.x / 8.x
+* **Database Driver:** PDO (PHP Data Objects)
+* **Database Server:** MySQL / MariaDB
+* **Frontend:** HTML5, CSS3, Bootstrap, FontAwesome
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 ```text
 simple-crud-php-mysql/
@@ -53,6 +54,9 @@ simple-crud-php-mysql/
 │   ├── input.php
 │   └── report.php
 │
+├── database/                        
+│   └── schema.sql
+|
 ├── screenshots/                        
 │   ├── edit.png
 │   ├── index.png
@@ -66,70 +70,42 @@ simple-crud-php-mysql/
 
 ---
 
-## Installation
+## ⚙️ Local Installation & Setup
 
 ### Prerequisites
+* Local Web Server Environment (e.g., [XAMPP](https://www.apachefriends.org/), [Laragon](https://laragon.org/), or MAMP)
+* PHP 7.4 or higher
+* MySQL / MariaDB Database
 
-- PHP 7.0 or later
-- MySQL
-- Apache (XAMPP, Laragon, or WAMP)
+### Step-by-Step Installation
 
-### Steps
+1. **Clone or Download Repository:**
+   Place the project folder inside your local server root web directory:
+   * **XAMPP:** `C:/xampp/htdocs/simple-crud-php-mysql/`
+   * **Laragon:** `C:/laragon/www/simple-crud-php-mysql/`
 
-1. Clone this repository
+2. **Import Database:**
+   * Open **phpMyAdmin** (`http://localhost/phpmyadmin`).
+   * Create a new database named **`simplecrud`**.
+   * Select `simplecrud` and go to the **Import** tab.
+   * Upload and execute the SQL file located at `database/schema.sql`.
 
-```bash
-git clone https://github.com/septharie/simple-crud-php-mysql.git
-```
+3. **Configure Database Connection:**
+   Open `config/connect.php` (or `connect.php`) and verify connection parameters:
+   ```php
+   <?php
+   $db = new PDO('mysql:host=localhost; dbname=simplecrud; charset=utf8mb4', 'root', '');
+   ?>
+   ```
 
-2. Place the project inside your web server directory.
-
-Example (XAMPP):
-
-```text
-htdocs/simple-crud-php-mysql
-```
-
-3. Create a MySQL database.
-
-4. Configure your database connection in `connect.php`.
-
-5. Start Apache and MySQL.
-
-6. Open your browser and visit:
-
-```text
-http://localhost/simple-crud-php-mysql
-```
+4. **Run Application:**
+   Open your browser and navigate to:
+   ```text
+   http://localhost/simple-crud-php-mysql/
+   ```
 
 ---
 
+## 📄 License
 
-## Learning Outcomes
-
-This project helped me strengthen my understanding of:
-
-- PHP programming fundamentals
-- CRUD operations
-- MySQL database connectivity
-- SQL queries
-- HTML forms and data processing
-- Bootstrap-based responsive layouts
-- Organizing a small PHP application
-
----
-
-## Future Improvements
-
-- User authentication and authorization
-- Search and filtering
-- Pagination
-- Server-side form validation
-- Prepared statements (PDO/MySQLi)
-- Export reports to Excel or PDF
-
----
-
-## License
-
-This project is available under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
