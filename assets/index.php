@@ -25,7 +25,7 @@
           <h1>Simple CRUD</h1>
           <hr>
           <p>User Database</p>
-          <a href="home.php" class="btn btn-default btn-lg page-scroll">Input Data</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="edit.php" class="btn btn-default btn-lg page-scroll">Edit Data</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="report.php" class="btn btn-default btn-lg page-scroll">Report</a> </div>
+          <a href="input.php" class="btn btn-default btn-lg page-scroll">Input Data</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="edit.php" class="btn btn-default btn-lg page-scroll">Edit Data</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="report.php" class="btn btn-default btn-lg page-scroll">Report</a> </div>
       </div>
     </div>
   </div>
